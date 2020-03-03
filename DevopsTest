@@ -1,1 +1,22 @@
+# !/bin/bash
+#Simaple  script to illustrate shell Variable
+echo "Simple calculator in shell"
+echo "First number"
+read n1
+echo "Second number"
+read n2
+read ans
+ans=$(( $n1+$n2 ));
+echo "Add $n1 & $n2 ="  $ans
 
+ans=$(( $n1-$n2 ));
+echo "Sub $n1 & $n2 =" $ans
+
+ans=$(( $n1/$n2 ));
+echo "Div $n1 & $n2 =" $ans
+
+ans=$(( $n1*$n2 ));
+echo "Multi $n1 & $n2 =" $ans
+
+ans=$(( $n1 ** $n2 ));
+echo "^of $n1  to $n2 =" $ans
